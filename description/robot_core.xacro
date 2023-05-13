@@ -38,7 +38,7 @@
     <joint name="chassis_joint" type="fixed">
         <parent link="base_link"/>
         <child link="chassis"/>
-        <origin xyz="-0.3 0 0"/>
+        <origin xyz="-0.3 0 0" rpy="0.0 0.0 0.0"/>
     </joint>
 
     <link name="chassis">
@@ -49,6 +49,12 @@
             </geometry>
             <material name="white"/>
         </visual>
+        <collision>
+            <origin xyz="0.75 0 0.375"/>
+            <geometry>
+                <box size="${base_length} ${base_width} ${base_height}"/>
+            </geometry>
+        </collision>
     </link>
     <!-- left wheel -->
      <joint name="left_wheel_joint" type="continuous">
@@ -66,6 +72,11 @@
             </geometry>
             <material name="blue"/>
         </visual>
+        <collision>
+            <geometry>
+                <cylinder radius="0.3" length="0.20"/>
+            </geometry>
+        </collision>
     </link>
 
     <gazebo reference="left_wheel">
@@ -88,6 +99,11 @@
             </geometry>
             <material name="blue"/>
         </visual>
+        <collision>
+             <geometry>
+                <cylinder radius="0.3" length="0.20"/>
+            </geometry>
+        </collision>
     </link>
 
     <gazebo reference="right_wheel">
@@ -108,6 +124,11 @@
             </geometry>
             <material name="black"/>
         </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.3"/>
+            </geometry>
+        </collision>
     </link>
 
 
