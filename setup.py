@@ -13,7 +13,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share',package_name,'description'), glob('description/*')),
         (os.path.join('share',package_name,'launch'), glob('launch/*')),
-        (os.path.join('share',package_name,'config'), glob('config/*'))
+        (os.path.join('share',package_name,'config'), glob('config/*')), 
+        (os.path.join('share',package_name,'behaviour_tree'), glob('behaviour_tree/*')),
 
     ],
     install_requires=['setuptools'],
@@ -24,7 +25,7 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+        'console_scripts': [ 'travel_to_points_exe = fyp_proj.nav_to_pose:main'
         ],
     },
 )
