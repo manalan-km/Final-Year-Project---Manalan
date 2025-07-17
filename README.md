@@ -8,7 +8,7 @@ Technologies used
 - Models: Xacro, SDF
 - Simulator: Gazebo
 
-Click [here]([url](https://youtu.be/VxCZ7COuevA)) for a video demo.
+Click [here](https://youtu.be/VxCZ7COuevA) for a video demo.
 
 Poster:
 ![alt text](https://github.com/manalan-km/Final-Year-Project---Manalan/blob/master/poster/poster.jpg)
